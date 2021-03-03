@@ -1,0 +1,177 @@
+
+*{
+ margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;  
+}
+header{
+    height: 50px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    font: size 40px; 
+    font-weight: normal;
+    cursor: pointer;
+    color: black;
+    display: none;
+
+}
+
+
+.menu ul{
+    background:white;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.menu ul ul{
+    display: none;
+}
+.menu a{
+  display: block;
+  padding: 15px 28px; 
+  color: black
+  
+  
+}
+.menu a:hover{
+   background:white ;
+   color: red;
+
+}
+.menu a span{
+    margin: 10px;
+}
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;
+}
+@media(max-width:768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        top: 58px;
+        left: 0;
+        width: 100%;
+        transform: translateX(-100%);
+        transition: all 0.3 s ;
+       
+}
+    
+
+    .menu ul{
+        display: block;
+        background: #555;
+    }
+    .menu ul li:hover ul {
+     display: none;
+    }
+    .menu a span{
+        position: absolute;
+        right: 5px;
+    }
+    #btn-menu :checked ~ .menu{
+        transform: translateX (0%);
+    }
+}
+
+.body{ 
+    margin: 0px;
+    width: 100%;
+
+
+}
+.Menu{
+    justify-content: space-between;
+    padding: 20px;
+    font-size: medium;
+    font-weight: normal;
+}
+
+.Menu:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.contenedor{
+    background-image: url(https://s1.1zoom.me/b5050/458/359121-admin_1920x1080.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+
+video{
+    float: left;
+    padding: 10px;
+    margin-left: 25%;
+    margin-top: 80px;
+    width: 56.25%;
+}
+
+
+
+.mision{
+
+    float: left;
+    padding: 10px;
+    color: white;
+    margin: 150px;
+    margin-left: 20px;
+    word-wrap: break-word;
+    width: 250px;
+    margin-top: 1%;
+}
+
+
+
+.contacto{
+    background: white;
+    display: flex;
+    padding: 50px;
+    overflow: hidden;
+    align-items: center; 
+    padding: 50px;
+    
+}
+
+.contenido{
+    float: left;
+    color: black;
+    margin-left: 300px;
+    word-wrap: break-word;
+    width: 250px;
+    padding: 20px;
+}
+
+.mision3{
+    
+    background-color: black;
+    float: left;
+    color: black;
+    margin-left: 90px;
+    margin-bottom: 50px;
+    word-wrap: break-word;
+    width: 640px;
+    height: 480px;
+    padding: 10px 10px;
+   
+}
+
+   form textarea{
+       max-width: 100%;
+   }    

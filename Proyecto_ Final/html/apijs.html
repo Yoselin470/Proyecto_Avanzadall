@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<style>
+    .principal{
+        justify-content: center;
+        display: flex;
+    }
+    .lista{
+        color: white;
+        margin-left: 0px;
+        width:990px;
+        text-align: center;
+        margin-top: 50px;
+        
+    }
+    .mensaje1{
+        margin-left: 0px;
+        width: 990px;
+        background-color: darkolivegreen;
+        text-align: center;
+        margin-top: 50px;
+        font-size: 24px;
+
+    }
+    .menu1{
+       background-color: #3e3e3e;
+       height: 60px;
+       display: flex;
+       justify-content:space-between;
+       position: fixed;
+       width: 98.9%;
+
+    }
+    .menu1>h2{
+        margin-left: 40%;
+        width: 20%;
+    }
+    .button {
+        background-color: darkgray; 
+        border: none;
+        color: white;
+        margin-top: 15px;
+        margin-right: 15px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-left: 10%;
+        border-radius: 10px;
+}
+.button:hover{
+        background-color: red;
+        cursor: pointer;
+    }
+
+</style>
+<body>
+    <div class="menu1">
+        <script src="../JS/api.js"></script>
+        <h2>Mensaje:</h2>
+        <button class="button" type ="button" onclick="nuevo()">Enviar </button>
+   
+
+    </div>
+    
+    
+    <div class="principal" style="height: 750px;">
+
+        <div class="mensaje1" id="contenedor">
+
+        </div>  
+        <br>
+        <br>
+        <div class="lista" id="MostrarDatos" style="background-color: black;">
+            <p >Historial</p>
+        </div>
+
+
+    </div>
+    
+
+</body>
+</html>
+
